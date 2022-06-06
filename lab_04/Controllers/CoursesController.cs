@@ -19,11 +19,20 @@ namespace lab_04.Controllers
             _dbContext = new ApplicationDbContext();
         }
 
+        
+        public ActionResult Create()
+        {
+            CourseViewModel viewModel = new CourseViewModel();
+
+            viewModel.Categories = _dbContext.categories.ToList();
+            return View("Create", viewModel);
+        }
+
         [Authorize]
         [HttpPost]
         public ActionResult Create(CourseViewModel viewModel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 viewModel.Categories = _dbContext.categories.ToList();
                 return View("Create", viewModel);

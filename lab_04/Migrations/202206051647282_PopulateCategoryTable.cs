@@ -7,6 +7,9 @@
     {
         public override void Up()
         {
+            Sql("INSERT INTO CATEGORIES (ID, NAME) VALUES (1, 'DEVELOPMENT')");
+            Sql("INSERT INTO CATEGORIES (ID, NAME) VALUES (2, 'BUSSINESS')");
+            Sql("INSERT INTO CATEGORIES (ID, NAME) VALUES (3, 'MARKETING')");
         }
         
         public override void Down()
