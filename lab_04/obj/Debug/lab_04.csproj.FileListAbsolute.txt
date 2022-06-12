@@ -109,3 +109,4 @@ D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.pdb
 D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.Migrations.InitialModel.resources
 D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.csproj.GenerateResource.cache
 D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.Migrations.PopulateCategoryTable.resources
+D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.Migrations.AddNameColumnToApplicaitonUser.resources
