@@ -12,17 +12,16 @@
     @foreach (var course in Model.UpcomingCourses)
     {
         <li class="card">
-            <h3 style="text-align:center; font-weight:bold; color:blue">LỊCH KHAI GIẢNG</h3>
+            <h3 style="text-align: center; font-weight: bold; color: #6495ED">KHAI GIẢNG LỚP HỌC</h3>
             <div class="date" style="margin-left:80px">
                 <div class="month">
                     @course.DateTime.ToString("MM")
-                </div>
+                </div>  
                 <div class="day">
                     @course.DateTime.ToString("dd")
                 </div>
             </div>
             <br />
-            <img src="~/Content/img_course.jpg" style="width:100%" />
             <div class="details" style="margin-left:90px">
                 <br /> <br /> <br />
                 <span class="lecturer" style="font-weight:bold">

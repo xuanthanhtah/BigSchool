@@ -11,8 +11,8 @@
 
 /* Override the default bootstrap behavior where horizontal description lists */
 .navbar-inverse {
-    background-color: #ff4342;
-    border-color: #ff4342;
+    background-color: #6495ED;
+    border-color: #6495ED;
 }
 
     .navbar-inverse .navbar-nav > li > a {
@@ -161,11 +161,12 @@ textarea {
         position: relative;
         margin-bottom: 30px;
         float: left;
-        margin-left: 55px;
+        margin-left: 60px;
+        margin-top: 20px;
     }
 
         .course > li .date {
-            background-color: red;
+            background-color: #6495ED;
             color: white;
             text-align: center;
             width: 60px;
@@ -204,7 +205,7 @@ textarea {
             }
 
         .course > li .action {
-            display: none;
+            /*display: none;*/
             left: 70px;
             position: absolute;
         }
