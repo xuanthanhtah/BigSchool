@@ -110,3 +110,8 @@ D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.Migrations.Init
 D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.csproj.GenerateResource.cache
 D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.Migrations.PopulateCategoryTable.resources
 D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.Migrations.AddNameColumnToApplicaitonUser.resources
+D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\bin\System.Net.Http.Formatting.dll
+D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\bin\System.Web.Http.dll
+D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\bin\System.Net.Http.Formatting.xml
+D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\bin\System.Web.Http.xml
+D:\Hutech\Thực hành web\Baitap\lab_04\lab_04\obj\Debug\lab_04.Migrations.updatedatabase.resources

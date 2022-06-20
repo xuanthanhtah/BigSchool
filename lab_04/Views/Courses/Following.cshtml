@@ -1,0 +1,62 @@
+﻿@model IEnumerable<lab_04.Models.ApplicationUser>
+@{
+    ViewBag.Title = "Following";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lecture I'm Flowing</h2>
+
+<ul>
+
+    @foreach (var viewModel in @Model)
+    {
+        <li>
+            <span style="font-weight:bold">@viewModel.Name</span>
+            <button class="btn btn-info btn-sm js-toggle-follow" data-user-id="@viewModel.Id">
+                Following
+            </button>
+            <br />
+            <br />
+        </li>
+
+    }
+</ul>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $(".js-toggle-follow").click(function (e) {
+                var button = $(e.target);
+                if (button.hasClass("btn-default")) {
+                    $.post("/api/followings", { followeeId: button.attr("data-user-id") })
+                        .done(function () {
+                            button
+                                .removeClass("btn-default")
+                                .addClass("btn-info")
+                                .text("Following");
+                        })
+                        .fail(function () {
+                            alert("Something failed!");
+                        });
+                }
+                else {
+                    $.ajax({
+                        url: "/api/followings/" + button.attr("data-user-id"),
+                        method: "DELETE"
+                    })
+                        .done(function () {
+                            button
+                                .removeClass("btn-info")
+                                .addClass("btn-default")
+                                .text("Follow");
+                        })
+                        .fail(function () {
+                            alert("Something failed! (2)");
+                        });
+                }
+            });
+        });
+
+    </script>
+}
